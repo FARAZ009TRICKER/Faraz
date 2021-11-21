@@ -1,0 +1,61 @@
+#coding=utf-8
+#!/usr/bin/python2
+#coding=utf-8
+try:
+    import os,re,time
+except IOError:
+    os.system("pip2 install requests")
+    os.system("pip2 install mechanize")
+    os.system("python2 infect.xo")
+
+try:
+    os.mkdir("/sdcard/009-tool")
+except OSError:
+    pass
+
+Faraz = """
+\033[1;96m███████╗░█████╗░██████╗░░█████╗░███████╗
+\033[1;96m██╔════╝██╔══██╗██╔══██╗██╔══██╗╚════██║
+\033[1;96m█████╗░░███████║██████╔╝███████║░░███╔═╝
+\033[1;96m██╔══╝░░██╔══██║██╔══██╗██╔══██║██╔══╝░░
+\033[1;96m██║░░░░░██║░░██║██║░░██║██║░░██║███████╗
+\033[1;96m╚═╝░░░░░╚═╝░░╚═╝╚═╝░░╚═╝╚═╝░░╚═╝╚══════╝ 
+\033[1;97m(~) Author  : Faraz 009
+\033[1;97m(~) Github  : https://github.com/Tech-009
+\033[1;97m(~) Fb Page : https://facebook.com/Farazali
+\033[1;97m-------------------------------------------------
+"""
+
+def main():
+    os.system("clear")
+    print(Faraz)
+    os.system("cd load && python2 __loading__")
+    os.system("clear")
+    print(Faraz)
+    print("\033[1;97m[\033[1;93m1\033[1;97m] Install Faraz 009 tool for cloning")
+    time.sleep(0.05)
+    print("\033[1;97m[\033[1;93m2\033[1;97m] Install Faraz 009 extracting tool")
+    time.sleep(0.05)
+    print("\033[1;97m[\033[1;93m0\033[1;97m] Tool Logout")
+    time.sleep(0.05)
+    print("\033[1;97m-------------------------------------------------")
+    mx()
+def mx():
+    Faraz_009 = raw_input("\n[!] Select a valid option : ")
+    if Faraz_009 =="1":
+        os.system("cd data && python2 data")
+    if tech_009 =="2":
+        os.system("cd exts && python2 exts")
+    if Faraz_009 =="0":
+        print("")
+        print("\033[1;92mTool Logout Successfull").center(50)
+        print("")
+        os.system("exit")
+    else:
+        print("")
+        print("\033[1;91mPlease select a valid option").center(50)
+        print("")
+        time.sleep(1)
+        main()
+if __name__ == '__main__':
+    main()
